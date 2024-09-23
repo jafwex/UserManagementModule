@@ -1,0 +1,1981 @@
+{
+	"info": {
+		"_postman_id": "89804fb5-dd4f-4dab-aa87-b6fbc3ff2f36",
+		"name": "user_mgmt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28366690",
+		"_collection_link": "https://restless-astronaut-634034.postman.co/workspace/badf389b-6e44-4abf-83ee-a953580b0c62/collection/28366690-89804fb5-dd4f-4dab-aa87-b6fbc3ff2f36?action=share&source=collection_link&creator=28366690"
+	},
+	"item": [
+		{
+			"name": "GetAllUsers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetAllUsers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1NDE2YmFjN2MxZDRiMzcyMzg3N2QiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2OTgyMDY2MjYsImV4cCI6MTY5ODI5MzAyNn0.tHtyiT5goJhKW1-HOAsw4Vt441KhWC-OsqmKu2Rwy68",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1443"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5a3-Y3bCbWzpZ3TxfFTOTiqpMeXvvto\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 25 Oct 2023 04:05:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"652675b3bb158670d5197a00\",\n        \"firstName\": \"Durga\",\n        \"lastName\": \"V\",\n        \"email\": \"durga.v@thinkinfinity.co.in\",\n        \"username\": \"Durga\",\n        \"mobileCountryCode\": \"+91\",\n        \"mobile\": \"9087654231\",\n        \"password\": \"$2a$08$0ffnDE7mzB2rtb3FZ03Ns.UF.sUwygtNWRDaVS2oY7DoCukGyt66i\",\n        \"profileImage\": \"uploads/user/profileImage-1698151790058.png\",\n        \"role\": \"User\",\n        \"address1\": \"123 asdf st\",\n        \"address2\": \"qwertyuio\",\n        \"status\": \"Active\",\n        \"loginAttempts\": 2,\n        \"lastLoginAttempt\": \"2023-10-17T10:52:43.058Z\",\n        \"__v\": 0,\n        \"updatedAt\": \"2023-10-24T12:49:50.062Z\"\n    },\n    {\n        \"_id\": \"6525416bac7c1d4b3723877d\",\n        \"firstName\": \"Sasikala\",\n        \"lastName\": \"S\",\n        \"email\": \"sasikala.s@thinkinfinity.co.in\",\n        \"username\": \"Sasikala\",\n        \"mobileCountryCode\": \"+91\",\n        \"mobile\": \"9087561243\",\n        \"password\": \"$2a$08$mlW3mhIMRok89n/epV/dOeKd1PNg0JMbEeXoY3/KsM4ZPDOhDcx9O\",\n        \"profileImage\": \"uploads/user/profileImage-1697629561569.jpeg\",\n        \"role\": \"Admin\",\n        \"address1\": \"qwsdfghjkl\",\n        \"address2\": \"asdfghjk\",\n        \"loginAttempts\": 0,\n        \"lastLoginAttempt\": null,\n        \"__v\": 0,\n        \"status\": \"Active\"\n    },\n    {\n        \"_id\": \"652f775314067c14a256d5d7\",\n        \"firstName\": \"Sugadhev\",\n        \"lastName\": \"R S\",\n        \"email\": \"sugadhev.r@thinkinfinity.co.in\",\n        \"username\": \"Sugadhev\",\n        \"mobileCountryCode\": \"+91\",\n        \"mobile\": \"9080800090\",\n        \"password\": \"$2a$08$udh.642jwkKxf7k/Nr9z0.4ev9CLdQuDYZuUOwevo/T2CRqfvZQ.e\",\n        \"profileImage\": \"uploads/user/profileImage-1697629579977.jpeg\",\n        \"role\": \"Manager\",\n        \"address1\": \"qwsdfghjkl\",\n        \"address2\": \"asdfghjk\",\n        \"loginAttempts\": 0,\n        \"lastLoginAttempt\": null,\n        \"__v\": 0,\n        \"status\": \"Active\",\n        \"updatedAt\": \"2023-10-24T09:47:08.474Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "CreateUsers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1NDE2YmFjN2MxZDRiMzcyMzg3N2QiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2OTc0MjgzNjIsImV4cCI6MTY5NzUxNDc2Mn0.YsfUCiujyTGyyPxZR0XsYnTLE5OhuM2jJNydVXNKTS4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "Sugadhev1",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "R S",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "sasikala",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "abcsddw@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "mobile",
+							"value": "9080068089",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "7b18ac40908c4d654f7a40ea7794a6c4",
+							"type": "text"
+						},
+						{
+							"key": "confirmPassword",
+							"value": "7b18ac40908c4d654f7a40ea7794a6c4",
+							"type": "text"
+						},
+						{
+							"key": "role",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "address1",
+							"value": "qwsdfghjkl",
+							"type": "text"
+						},
+						{
+							"key": "address2",
+							"value": "asdfghjk",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "/home/dell/team1.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CreateUsers",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Nova",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Felix1",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "novafelix1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "novafelix123@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "9087561246",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "a339879767fc653f4211636e89f9b40b",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "a339879767fc653f4211636e89f9b40b",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "User",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "qwsdfghjkl",
+									"type": "text"
+								},
+								{
+									"key": "address2",
+									"value": "asdfghjk",
+									"type": "text"
+								},
+								{
+									"key": "profileImage",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://172.16.22.42:4000/api/v1/user/",
+							"protocol": "http",
+							"host": [
+								"172",
+								"16",
+								"22",
+								"42"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "41"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"29-x98ikC/UfISzoGUZ/b9RLMXuFxA\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 29 Sep 2023 11:24:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User created successfully!!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "GetUserById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/user/64fb031e46a6a480f220841d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"64fb031e46a6a480f220841d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GetUserById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1NDE2YmFjN2MxZDRiMzcyMzg3N2QiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2OTgxMTg2MDgsImV4cCI6MTY5ODIwNTAwOH0.77UrKcKnHNlj0EUoHEohGgG1K2rEavUIj5edWngiMcI",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/652675b3bb158670d5197a00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"652675b3bb158670d5197a00"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "387"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"183-LZIVuw4IU/vnVz/+GFFffvp1wks\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Oct 2023 07:29:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"User Details fetched sucessfully\",\n    \"data\": {\n        \"_id\": \"652675b3bb158670d5197a00\",\n        \"firstName\": \"Durga\",\n        \"lastName\": \"V\",\n        \"email\": \"durga.v@thinkinfinity.co.in\",\n        \"username\": \"Durga\",\n        \"mobileCountryCode\": \"+91\",\n        \"mobile\": \"9087654231\",\n        \"profileImage\": \"uploads/user/profileImage-1697629549109.jpeg\",\n        \"address1\": \"123 asdf st\",\n        \"address2\": \"qwertyuio\",\n        \"status\": \"Active\",\n        \"role\": \"User\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Subscribe Newsletter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"sasikala.s@thinkinfinity.co.in\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/newsletter/subscribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"newsletter",
+						"subscribe"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Subscribe Newsletter",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"sasikala.s@thinkinfinity.co.in\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/newsletter/subscribe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"newsletter",
+								"subscribe"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "75"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"4b-quIRfH7uWPnkIa41Bee01rJbQ5U\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 26 Oct 2023 05:46:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Success\",\n    \"message\": \"Subscribed to the newsletter successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"sasikala.s@thinkinfinity.co.in\",\n    \"password\": \"sasikala\"\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"acabba0bd92b0de6e4e93a1a2bffb3b23198f5238d187913bf91539037b85c9e\",\n    \"password\": \"ef39c18e85e0d1fee1e6b09e4c32d3e0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "332"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14c-UT/v9eavi5gWgXIAxKvXBi/upWA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Oct 2023 03:39:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Login Successfully\",\n    \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1NDE2YmFjN2MxZDRiMzcyMzg3N2QiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2OTgxMTg3ODAsImV4cCI6MTY5ODIwNTE4MH0.8bWjlXS346h2hJBIgTncjD4n-FBFn0RnQSdNIPkZjzA\",\n    \"userId\": \"6525416bac7c1d4b3723877d\",\n    \"role\": \"Admin\",\n    \"expiredAt\": 1698205180\n}"
+				}
+			]
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"user\",\n    \"lastName\": \"one\",\n    \"email\": \"userone@gmail.com\",\n    \"username\": \"user1one\",\n    \"mobileCountryCode\": \"+91\",\n    \"mobile\": \"9012345678\",\n    \"password\": \"$2a$08$owFtGa9or0D3JpLAUZ5hKeJbY7AVfE7MrcnQzH3UFVXqBuTgA0VQ.\",\n    \"role\": \"user\",\n    \"address1\": \"\",\n    \"address2\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4004/api/v1/user/64fb031e46a6a480f220841d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4004",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"64fb031e46a6a480f220841d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateUser",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1NDE2YmFjN2MxZDRiMzcyMzg3N2QiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2OTgxMzI2ODcsImV4cCI6MTY5ODIxOTA4N30.iDi5AWavAMcqhFA6qRDleas422IuO-FQRmcKQFfi0bs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Sugadhev",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "R S",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "Sugadhev",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "sugadhev.r@thinkinfinity.co.in",
+									"type": "text"
+								},
+								{
+									"key": "mobile",
+									"value": "93433343434",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "ef39c18e85e0d1fee1e6b09e4c32d3e0",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "ef39c18e85e0d1fee1e6b09e4c32d3e0",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Manager",
+									"type": "text"
+								},
+								{
+									"key": "address1",
+									"value": "qwsdfghjkl",
+									"type": "text"
+								},
+								{
+									"key": "address2",
+									"value": "asdfghjk",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/652f775314067c14a256d5d7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"652f775314067c14a256d5d7"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-dfFyQgR3GE+Pkj6o/3TrBgkhH1g\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Oct 2023 09:08:23 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User updated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "updateStatus",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"ACTIVE\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/user/status/64fb031e46a6a480f220841d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"status",
+						"64fb031e46a6a480f220841d"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "updateStatus",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1NDE2YmFjN2MxZDRiMzcyMzg3N2QiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2OTgxMzI2ODcsImV4cCI6MTY5ODIxOTA4N30.iDi5AWavAMcqhFA6qRDleas422IuO-FQRmcKQFfi0bs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\":\"Inactive\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/status/652675b3bb158670d5197a00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"status",
+								"652675b3bb158670d5197a00"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "47"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f-A5nPybTgzqv7se2OVLoepfIcPZ4\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Oct 2023 07:31:40 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User status updated successfully!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Unsubscribe Newsletter",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"sasikala.s@thinkinfinity.co.in\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/newsletter/unsubscribe",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"newsletter",
+						"unsubscribe"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Unsubscribe Newsletter",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"sasikala.s@thinkinfinity.co.in\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/newsletter/unsubscribe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"newsletter",
+								"unsubscribe"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "60"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3c-p7XNJNeSy3YhDocDSIkYTOc98Ew\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 26 Oct 2023 06:30:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Unsubscribed from the newsletter successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1NDE2YmFjN2MxZDRiMzcyMzg3N2QiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2OTgyOTg5NDIsImV4cCI6MTY5ODMwMjU0Mn0.splFfiIektlGFDJYOgJFooo3uCKggGLZKMyaz4CI1Es",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4000/api/v1/user/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Logout User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1NDE2YmFjN2MxZDRiMzcyMzg3N2QiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2OTgyOTg5NDIsImV4cCI6MTY5ODMwMjU0Mn0.splFfiIektlGFDJYOgJFooo3uCKggGLZKMyaz4CI1Es",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "28"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c-O/IKKtT5tvIGTRcQd6CJITjBeJU\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 26 Oct 2023 05:43:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Invalid token!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "ChangePassword",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"usertwo\",\n        \"currentPassword\": \"$2a$08$h2VkgCd3C0ozgUWecEaM9edPtISuZwCbQ4q2ILhnoGzrGwemWx43i\",  \n        \"newPassword\": \"usertwo\",\n    \"confirmPassword\": \"usertwo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/user/changepassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"changepassword"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "ChangePassword",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1NDE2YmFjN2MxZDRiMzcyMzg3N2QiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2OTgxMTg2MDgsImV4cCI6MTY5ODIwNTAwOH0.77UrKcKnHNlj0EUoHEohGgG1K2rEavUIj5edWngiMcI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"oldPassword\": \"7b18ac40908c4d654f7a40ea7794a6c4\",\n    \"newPassword\": \"ef39c18e85e0d1fee1e6b09e4c32d3e0\",\n    \"confirmPassword\": \"ef39c18e85e0d1fee1e6b09e4c32d3e0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/changepassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"changepassword"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "83"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"53-uExkeF/1BgXnR9TU/P9D3jIGNKk\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Oct 2023 03:39:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"statusCode\": 200,\n    \"message\": \"Password was updated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "list-subscribe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/newsletter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"newsletter"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "list-subscribe",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/newsletter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"newsletter"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "239"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ef-kdDX7yeIqeXddRqLSTkbxQNiTuw\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 26 Oct 2023 06:30:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"message\": \"Subscribers data fetched successfully\",\n    \"data\": [\n        {\n            \"_id\": \"652e7da0ff993746399f1afd\",\n            \"email\": \"sugadhev.r@thinkinfinity.co.in\",\n            \"createdAt\": \"2023-10-17T12:27:12.688Z\",\n            \"updatedAt\": \"2023-10-17T12:27:12.688Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "view-profile",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/user/profile/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "view-profile",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1NDE2YmFjN2MxZDRiMzcyMzg3N2QiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2OTgxMzI2ODcsImV4cCI6MTY5ODIxOTA4N30.iDi5AWavAMcqhFA6qRDleas422IuO-FQRmcKQFfi0bs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/currentUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"currentUser"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "340"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"154-HJYrZovtigdEUGD0steAYRsTEvY\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Oct 2023 09:04:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"userData\": {\n        \"userId\": \"6525416bac7c1d4b3723877d\",\n        \"firstName\": \"Sasikala\",\n        \"lastName\": \"S\",\n        \"email\": \"sasikala.s@thinkinfinity.co.in\",\n        \"username\": \"Sasikala\",\n        \"mobileCountryCode\": \"+91\",\n        \"mobile\": \"9087561243\",\n        \"profileImage\": \"uploads/user/profileImage-1697629561569.jpeg\",\n        \"address1\": \"qwsdfghjkl\",\n        \"address2\": \"asdfghjk\",\n        \"status\": \"Active\",\n        \"role\": \"Admin\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "DeleteUser",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"ids\": [\"652543a08ff76c191c1adfbc\",\"652542f68ff76c191c1adfb1\"] }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete User",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NTI1NDE2YmFjN2MxZDRiMzcyMzg3N2QiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2OTgxMTg3ODAsImV4cCI6MTY5ODIwNTE4MH0.8bWjlXS346h2hJBIgTncjD4n-FBFn0RnQSdNIPkZjzA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": [\n       \"652e115ee4b207e9ed0e140c\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/65376334f5f625b240ab584c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"65376334f5f625b240ab584c"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-27o4zzUjhHNmthTJyia4gBCjpos\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 24 Oct 2023 07:23:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"User deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "forgotPassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"sasikala.s@thinkinfinity.co.in\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/user/forgotpassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"forgotpassword"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "forgotPassword",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"sasikala.s@thinkinfinity.co.in\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/forgotpassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"forgotpassword"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "115"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"73-Eo9dO4M6KhiPK+rt7a3QkDNi5IY\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 26 Oct 2023 06:32:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"Password reset email sent.\",\n    \"message\": \"Password reset link was sent to sasikala.s@thinkinfinity.co.in.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Resetpassword",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\":\"sasikala\",\n    \"confirmPassword\":\"sasikala\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/user/resetpassword/64fb065f100efeedf7df9d2a/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NGZiMDY1ZjEwMGVmZWVkZjdkZjlkMmEiLCJpYXQiOjE2OTQ3NzA1NTksImV4cCI6MTY5NDc3MzI1OX0.rAkYjmB9utdGLA4E66pfuihtCakjDXmaCRTRpG4e-oE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"resetpassword",
+						"64fb065f100efeedf7df9d2a",
+						"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NGZiMDY1ZjEwMGVmZWVkZjdkZjlkMmEiLCJpYXQiOjE2OTQ3NzA1NTksImV4cCI6MTY5NDc3MzI1OX0.rAkYjmB9utdGLA4E66pfuihtCakjDXmaCRTRpG4e-oE"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verifyOTP",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\":\"sasikala.s@thinkinfinity.co.in\",\n    \"otp\":\"408333\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/api/v1/user/verifyOTP",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"verifyOTP"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "verifyOTP",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"sasikala.s@thinkinfinity.co.in\",\n    \"otp\":\"408333\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/v1/user/verifyOTP",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"verifyOTP"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "39"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"27-gmemsCpNdXZC5ApWNn/ZciPyh/8\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 26 Oct 2023 06:32:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"OTP verified successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Image",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3005/api/v1/user/image/65003e47d5017a0a46e47c84",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3005",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"image",
+						"65003e47d5017a0a46e47c84"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "encrypt-decrypt",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"NDE2NWYzNTAwZjlhM2IwNTQzN2JmZWMxYTdhNmI2ODNiOTI5M2VkNDlkN2YwYTNjMTVmMTNlZTQ2YmE4ZDk1Mg==\",\n    \"password\": \"ODM2MGM0ZmE3MTE1OTk4YzhmNTZkODA4MGNlNjUxZmY=\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4001/api/v1/user/decrypt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4001",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"decrypt"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "encrypt",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"sasikala.s@thinkinfinity.co.in\",\n    \"password\": \"sasikala\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/encrypt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"encrypt"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "210"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"d2-nwOK4t6BG6IeVW0wkp17d6Ge9Ew\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Sep 2023 06:44:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"encryptedName\": \"NDE2NWYzNTAwZjlhM2IwNTQzN2JmZWMxYTdhNmI2ODNiOTI5M2VkNDlkN2YwYTNjMTVmMTNlZTQ2YmE4ZDk1Mg==\",\n    \"encryptedPassword\": \"ODM2MGM0ZmE3MTE1OTk4YzhmNTZkODA4MGNlNjUxZmY=\",\n    \"message\": \"encrypted successfully\"\n}"
+				},
+				{
+					"name": "decrypt",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"NDE2NWYzNTAwZjlhM2IwNTQzN2JmZWMxYTdhNmI2ODNiOTI5M2VkNDlkN2YwYTNjMTVmMTNlZTQ2YmE4ZDk1Mg==\",\n    \"password\": \"ODM2MGM0ZmE3MTE1OTk4YzhmNTZkODA4MGNlNjUxZmY=\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4001/api/v1/user/decrypt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4001",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								"decrypt"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "http://localhost:3000"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "116"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"74-APQAiPpo3aq9lkDAUzLRz3y1S5k\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Sep 2023 06:45:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"decryptedName\": \"sasikala.s@thinkinfinity.co.in\",\n    \"decryptedPassword\": \"sasikala\",\n    \"message\": \"decrypted successfully\"\n}"
+				}
+			]
+		}
+	]
+}

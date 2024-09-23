@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .confirmation-text {
+            margin-bottom: 30px;
+        }
+        .confirmation-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4caf50;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>Our Newsletter</h1>
+        </div>
+        <div class="confirmation-text">
+            <p>Hi User,</p>
+            <p>Thank you for subscribing to our newsletter! Please click the button below to explore more</p>
+            <img src='cid:img' alt="subscribe">
+        </div>
+        <a href="EXPLORE MORE" class="confirmation-button">EXPLORE MORE</a>
+        <p>If you did not request this subscription, please ignore this email.</p>
+        <a href="http://localhost:3000/auth/unSubscribe">Unsubscribe</a>
+    </div>
+</body>
+</html>
